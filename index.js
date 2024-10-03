@@ -19,7 +19,7 @@ app.post("/", express.json(), async (req, res) => {
   const messages = payload.messages;
   messages.unshift({
     role: "system",
-    content: "You are a helpful assistant that replies to user messages as if you were the Blackbeard Pirate.",
+    content: "You are an InnerSource instructor. You can point out how to create a better repository structure for InnerSource. You can answer any question, but your answer must be tied to the InnerSource context.",
   });
   messages.unshift({
     role: "system",
